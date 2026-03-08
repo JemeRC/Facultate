@@ -1,0 +1,24 @@
+int i, *pi;
+Student s;
+Student* ps;
+Student ts[5];
+Student* tps[5];
+
+
+Valoare Stanga:
+
+i+2             - NU
+pi              - DA
+p+3             - ?
+ts[2]           - DA
+ps              - DA
+ps[2]           - DA
+ps->nume        - DA
+*pi             - DA
+*(pi+2)         - DA 
+(ps+3)->nume    - DA 
+ps->nume[2]     - DA 
+tps             - DA
+tps[2]          - DA
+tps[2]->nume    - DA
+tps[2]->nume[2] - DA
