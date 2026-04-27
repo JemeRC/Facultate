@@ -43,36 +43,41 @@ void selection_sort(int A[], int n){
 
 void insertion_sort(int A[], int n){
     for(int k = 1; k < n; k++ ){
-        int temp = A[k];
-        int i = k - 1;
-        while( i >= 1 && (A[i] > temp) ){
-            A[i+1] = A[i];
-            i = i - 1;
+        /* Pas */                           nrOperatii++;
+        int temp = A[k];                    nrOperatii++;
+        int i = k - 1;                      nrOperatii++;
+        while( i >= 1 && (A[i] > temp) ){   nrOperatii+=2;
+            A[i+1] = A[i];                  nrOperatii++;
+            i = i - 1;                      nrOperatii++;
         }
-        A[i+1] = temp;
+        A[i+1] = temp;                      nrOperatii++;
+        /* Comparatie */                    nrOperatii++;
     }
 }
 
 int bruteforce_search(int A[], int n, int b){
-    int i = 0;
-    while( i < n ){
-        if( A[i] == b )
+    int i = 0;                              nrOperatii++;
+    while( i < n ){                         nrOperatii++;
+        if( A[i] == b ){                    nrOperatii++;
             return i;
-        i++;
+        }
+        i++;                                nrOperatii++;
     }
     return -1;
 }
 
 int binary_search(int A[], int n, int b){
-    int st = 0;
-    int dr = n-1;
-    while( st <= dr ){
-        int mij = (st + dr) / 2;
-        if( A[mij] == b ) return mij;
-        else if( A[mij] > b ){
-                dr = mij - 1;
+    int st = 0;                             nrOperatii++;
+    int dr = n-1;                           nrOperatii++;
+    while( st <= dr ){                      nrOperatii++;
+        int mij = (st + dr) / 2;            nrOperatii++;
+        if( A[mij] == b ){                  nrOperatii++;
+             return mij;
+        }
+        else if( A[mij] > b ){              nrOperatii++;
+                dr = mij - 1;               nrOperatii++;
             }else{
-                st = mij + 1;
+                st = mij + 1;               nrOperatii++;
             }
     }
     return -1;
@@ -101,6 +106,22 @@ int main(){
     random_elements(A, N);
     bubble_sort(A, N);
     std::cout << "Bubble Sort: " << nrOperatii << " de operatii \n";
+
+    random_elements(A, N);
+    selection_sort(A, N);
+    std::cout << "Selection Sort: " << nrOperatii << " de operatii \n";
+
+    random_elements(A, N);
+    insertion_sort(A, N);
+    std::cout << "Insertion Sort: " << nrOperatii << " de operatii \n";
+
+    ascending_elements(A, N);
+    bruteforce_search(A, N, 40);
+    std::cout << "BruteForce Search: " << nrOperatii << " de operatii \n";
+
+    ascending_elements(A, N);
+    binary_search(A, N, 40);
+    std::cout << "Binary Search: " << nrOperatii << " de operatii \n";
 
 
 
