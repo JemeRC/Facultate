@@ -7,7 +7,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${workspaceFolder}\\Lab6\\Problema2\\*.cpp",
+                "${workspaceFolder}\\Lab10\\Problema2\\*.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
