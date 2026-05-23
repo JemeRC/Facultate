@@ -16,7 +16,7 @@ void inserareElement(Elem*&, Atom);
 void afisareLista(Elem*);
 
 // c.
-int cautare(Elem*&, Atom);
+int cautare(Elem*, Atom);
 
 // d.
 void inserareExacta(Elem*&, Atom, int);
@@ -25,7 +25,7 @@ void inserareExacta(Elem*&, Atom, int);
 void stergereExacta(Elem*&, int);
 
 // f.
-void K_element()
+void K_element();
 
 
 #endif
