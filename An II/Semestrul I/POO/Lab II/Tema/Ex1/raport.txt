@@ -1,0 +1,7 @@
+Nr. Nume            Grupa  Note            Media
+  1 Constantinescu   1209  9 10 10          9.67
+  2 Popescu          1207  10 9 8           9.00
+  3 Ionescu          1208  7 8 9 10         8.50
+  4 Avram            1207  6 5              5.50
+  5 Marin            1208                   0.00
+Media generala: 6.53

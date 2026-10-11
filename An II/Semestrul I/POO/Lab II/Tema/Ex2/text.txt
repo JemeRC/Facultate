@@ -1,0 +1,4 @@
+Jump! (Pogo, pogo, pogo, pogo, pogo, pogo, pogo)
+Bounce! (Pogo, pogo, pogo, pogo, pogo, pogo, pogo)
+Down! (Pogo, pogo, pogo) Up! (Pogo, pogo, pogo)
+Jump! (Pogo) Bounce! (Pogo) Up! (Pogo) Down! (Pogo)

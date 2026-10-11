@@ -1,0 +1,5 @@
+Popescu 1207 3 10 9 8
+Ionescu 1208 4 7 8 9 10
+Avram 1207 2 6 5
+Constantinescu 1209 3 9 10 10
+Marin 1208 0
